@@ -1,0 +1,18 @@
+
+{% block content %}
+<div>
+    <h3>Login Page</h3>
+</div>
+<div>
+    <form action="" method="POST"> {% csrf_token %}
+        {{ form.as_p }}
+        <p>Email: <input id="email-login" type="word" class="user-input-expense"></p>
+        <p>Password: <input id="password-login" type="password" class="user-input-expense"></p>
+        <button>Login</button>
+    </form>
+</div>
+<a href="{% url 'register' %}">Create an Account</a>
+
+<h2><a>Welcome {{ user }}!</a></h2>
+
+{% endblock %}

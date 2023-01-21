@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(250, 249, 248);
+    width: 600px;
+    padding: 20px 75px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    color: rgb(60, 60, 60);
+}
+
+h1 {
+    text-align: center;
+    margin: 0px 0px 70px;
+    font-weight: 500;
+}
+
+.enter-input {
+    font-size: 18px;
+}
+
+.budget-amt {
+    color: green;
+}
+
+.expense-amt {
+    color: rgb(233, 0, 0);
+}
+
+.budget-input {
+    width: 500px;
+    padding: 0px 10px 15px 10px;
+    border-radius: 7px;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    left: 200px;
+}
+
+.expense-input {
+    width: 500px;
+    padding: 10px;
+    border-radius: 7px;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    padding: 0px 10px 15px 10px;
+    font-weight: 00;
+}
+
+.user-input-budget {
+    font-size: 18px;
+    border: green;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.user-input-expense {
+    font-size: 18px;
+    border: rgb(233, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.btn {
+    width: 500px;
+    border-radius: 7px;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    left: 200px;
+    top: 480px;
+    padding: 10px 10px 10px 10px;
+}
+
+.submit {
+    color: green;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    background-color: rgba(230, 230, 230, 0.103);
+    padding: 10px;
+    width: 100px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.subtitle-budget, 
+.subtitle-expense, 
+.subtitle-balance {
+    font-weight: 500;
+}
+
+.col-1 {
+    position: relative;
+    left: 200px;
+    top: 0;
+    width: 200px;
+}
+.col-2 {
+    position: relative;
+    left: 500px;
+    top: -166px;
+    width: 200px;
+}
+.col-3 {
+    position: relative;
+    left: 800px;
+    top: -333px;
+    width: 200px;
+}
+
+.col-1, .col-2, .col-3 {
+    text-align: center;
+}
+
+#expense-container {
+    bottom: 300px;
+    left: 225px;
+    width: 800px;
+    position: relative;
+}
+
+.row-container {
+    height: 40px;
+}
+
+.divBudget{
+    text-align: center;
+    position: relative;
+    width: 150px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+}
+.divExpense{
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    left: 300px;
+    width: 150px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(233, 0, 0);
+}
+.divRemove {
+    background-color: white;
+    position: relative;
+    left: 630px;
+    bottom: 60px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 7px 20px 7px 20px;
+
+}
+
+
