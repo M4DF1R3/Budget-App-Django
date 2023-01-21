@@ -2,10 +2,9 @@
 
 {% block content %}
 <h2>Register</h2>
-<form method="post">
-{% csrf_token %}
-{{ form.as_p }}
-<button type="submit">Register</button>
+<form method="post"> {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Login">
 </form>
 
 <a href="{% url 'login' %}">Click Here to Login</a>

@@ -6,9 +6,7 @@
 <div>
     <form action="" method="POST"> {% csrf_token %}
         {{ form.as_p }}
-        <p>Email: <input id="email-login" type="word" class="user-input-expense"></p>
-        <p>Password: <input id="password-login" type="password" class="user-input-expense"></p>
-        <button>Login</button>
+        <button type="submit">Login</button>
     </form>
 </div>
 <a href="{% url 'register' %}">Create an Account</a>

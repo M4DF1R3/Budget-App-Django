@@ -1,9 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-
+from django.contrib.auth.decorators import login_required
 from .models import Budget, Expense
 
+# User must be logged in
+@login_required
 def home_view(request, *args, **kwargs):
     user_budgets = Budget.objects.filter(user=request.user)
     selected_budget = None
@@ -17,16 +19,5 @@ def home_view(request, *args, **kwargs):
     }
     return render(request, 'index.html', context)
 
-def login_view(request, *args, **kwargs):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            login(request, user)
-            return redirect('home')
-        else:
-            pass # Return an 'invalid login' error message
-    else:
-        return render(request, 'login.html', {})
+
     
